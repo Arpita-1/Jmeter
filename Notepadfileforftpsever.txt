@@ -1,0 +1,13 @@
+// We import File, FileUtils for creating screenshots and storing them disk
+import java.io.File;
+import java.util.Random;
+import openqa.selenium.OutputType.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+// Required to start counting time which will get reported at the end of this code.
+WDS.sampleResult.sampleStart();
+// We could have passed this in, just coding in the example
+String baseUrl = "https://www.simplilearn.com/";
+// Load the home page
+WDS.browser.get(baseUrl);
+WDS.sampleResult.sampleEnd();
